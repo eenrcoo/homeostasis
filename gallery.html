@@ -153,14 +153,13 @@
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1.5rem;
+            gap: 2rem;
             margin-top: 2rem;
         }
 
         .gallery-item {
             overflow: hidden;
             border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
 
@@ -171,6 +170,7 @@
         .gallery-item img {
             width: 100%;
             height: 500px;
+            border-radius: 8px;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
@@ -219,26 +219,26 @@
         <section id="gallery">
             <div class="section-content">
                 <h1>Gallery</h1>
-                <p>A visual collection of moments and my interest.</p>
+                <p>A visual collection of moments and my interests.</p>
                 
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="Assets/20250509_184347.jpg" alt="Gelora Bung Karno" />
+                        <img src="Assets/Night at Gelora Bung Karno.jpg" alt="Gelora Bung Karno" title="Night at Gelora Bung Karno" />
                     </div>
                     <div class="gallery-item">
-                        <img src="Assets/20250325_141718.jpg" alt="Digital Board" />
+                        <img src="Assets/Basic Digital Board.jpg" alt="Digital Board" title="Indoor Activity" />
                     </div>
                     <div class="gallery-item">
-                        <img src="Assets/20250330_144043.jpg" alt="No Longer Human" />
+                        <img src="Assets/no longer human.jpg" alt="No Longer Human" title="&quot;No Longer Human&quot; by Osamu Dazai" />
                     </div>
                     <div class="gallery-item">
-                        <img src="Assets/20250516_162917.jpg" alt="Wayang Sculpture" />
+                        <img src="Assets/Sculpture of Rama and Sinta.jpg" alt="Wayang Sculpture" title="Sculpture of Rama and Sinta" />
                     </div>
                     <div class="gallery-item">
-                        <img src="Assets/IMG-20240613-WA0025.jpg" alt="Pathway In Senayan" />
+                        <img src="Assets/IMG-20240613-WA0025.jpg" alt="Pathway In Senayan" title="Pathway In Senayan" />
                     </div>
                     <div class="gallery-item">
-                        <img src="Assets/20250622_174215.jpg" alt="Halte Tosari" />
+                        <img src="Assets/View from Tosari Bus Stop.jpg" alt="Halte Tosari" title="Tosari Bust Stop" />
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@
     </footer>
 
     <script>
-        // smooth scrolling buat semua link
+        // biar bikin smooth scrolling buat semua link
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -261,7 +261,7 @@
             });
         });
 
-        // animasi simpel ketika section di view
+        // animasi simple ketika section di view
         const observerOptions = {
             threshold: 0.1
         };
