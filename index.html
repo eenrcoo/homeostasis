@@ -65,7 +65,10 @@
             padding-top: 80px;
         }
 
-        .hero {
+        .plenger {
+            position: relative;
+            background-image: url(./Assets/bg.jpg);
+            background-size: cover;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -75,12 +78,27 @@
             padding: 2rem;
         }
 
-        .hero h1 {
+        .plenger::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.497); 
+            z-index: 1; 
+        }
+
+        .plenger h1 {
+            position: relative;
+            z-index: 2;
             font-size: 3rem;
             margin-bottom: 1rem;
         }
 
-        .hero p {
+        .plenger p {
+            position: relative;
+            z-index: 2;
             font-size: 1.5rem;
             margin-bottom: 3rem;
         }
