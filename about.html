@@ -204,8 +204,6 @@
                 grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             }
         }
-
-        /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
@@ -257,7 +255,6 @@
     </main>
 
     <script>
-        // biar bikin smooth scrolling buat semua link
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -267,8 +264,6 @@
                 });
             });
         });
-
-        // animasi simple ketika section di view
         const observerOptions = {
             threshold: 0.1
         };
@@ -291,4 +286,5 @@
     </script>
 </body>
 </html>
+
 
