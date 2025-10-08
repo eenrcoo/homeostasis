@@ -199,7 +199,6 @@
             }
         }
 
-        /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
@@ -251,7 +250,6 @@
     </footer>
 
     <script>
-        // biar bikin smooth scrolling buat semua link
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -262,7 +260,6 @@
             });
         });
 
-        // animasi simple ketika section di view
         const observerOptions = {
             threshold: 0.1
         };
@@ -285,3 +282,4 @@
     </script>
 </body>
 </html>
+
