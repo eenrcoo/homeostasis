@@ -147,8 +147,6 @@
         .profile-image {
             width: 80%;
             height: auto;
-            margin: 0 auto;
-            display: block;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
@@ -202,6 +200,16 @@
                 gap: 2rem;
                 justify-items: center;
             }
+
+            .profile-image {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .about-text {
+                text-align: center;
+            }
             
             .gallery {
                 grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -231,7 +239,7 @@
                     <div>
                         <img src="Assets/image.jpg" class="profile-image" />
                     </div>
-                    <div>
+                    <div class="about-text">
                         <h2>Hello!</h2>
                         <p>
                             Welcome to my personal space.<br>
